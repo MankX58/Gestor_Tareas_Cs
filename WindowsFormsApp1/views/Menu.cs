@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.views
 {
-    public partial class Sesion : Form
+    public partial class Menu : Form
     {
-        public Sesion()
+        public Menu()
         {
             InitializeComponent();
         }

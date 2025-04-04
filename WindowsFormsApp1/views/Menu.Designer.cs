@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿namespace WindowsFormsApp1.views
 {
-    partial class Sesion
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Menu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Menu";
+            this.Text = "Menu";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

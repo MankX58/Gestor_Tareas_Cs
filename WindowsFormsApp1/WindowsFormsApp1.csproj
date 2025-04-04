@@ -46,10 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sesion.cs">
+    <Compile Include="views\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sesion.Designer.cs">
+    <Compile Include="views\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Sesion.Designer.cs">
       <DependentUpon>Sesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -63,6 +69,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="views\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Sesion.resx">
+      <DependentUpon>Sesion.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
