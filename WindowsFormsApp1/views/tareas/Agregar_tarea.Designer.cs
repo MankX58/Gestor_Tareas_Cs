@@ -30,20 +30,21 @@
         {
             this.LblTitlteTarea = new System.Windows.Forms.Label();
             this.LblNombreTarea = new System.Windows.Forms.Label();
-            this.TxtNombreTarea = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtTarea = new System.Windows.Forms.TextBox();
+            this.TxtDesc = new System.Windows.Forms.TextBox();
+            this.LblCategoria = new System.Windows.Forms.Label();
+            this.TxtCategoria = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaLimite = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblTitlteTarea
             // 
             this.LblTitlteTarea.AutoSize = true;
             this.LblTitlteTarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitlteTarea.Location = new System.Drawing.Point(51, 47);
+            this.LblTitlteTarea.Location = new System.Drawing.Point(62, 46);
             this.LblTitlteTarea.Name = "LblTitlteTarea";
             this.LblTitlteTarea.Size = new System.Drawing.Size(194, 25);
             this.LblTitlteTarea.TabIndex = 0;
@@ -61,36 +62,36 @@
             this.LblNombreTarea.Text = "Nombre";
             this.LblNombreTarea.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // TxtNombreTarea
+            // TxtTarea
             // 
-            this.TxtNombreTarea.Location = new System.Drawing.Point(120, 88);
-            this.TxtNombreTarea.Name = "TxtNombreTarea";
-            this.TxtNombreTarea.Size = new System.Drawing.Size(125, 20);
-            this.TxtNombreTarea.TabIndex = 2;
+            this.TxtTarea.Location = new System.Drawing.Point(140, 89);
+            this.TxtTarea.Name = "TxtTarea";
+            this.TxtTarea.Size = new System.Drawing.Size(125, 20);
+            this.TxtTarea.TabIndex = 2;
             // 
-            // textBox1
+            // TxtDesc
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 20);
-            this.textBox1.TabIndex = 4;
+            this.TxtDesc.Location = new System.Drawing.Point(140, 123);
+            this.TxtDesc.Name = "TxtDesc";
+            this.TxtDesc.Size = new System.Drawing.Size(125, 20);
+            this.TxtDesc.TabIndex = 4;
             // 
-            // label1
+            // LblCategoria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre";
+            this.LblCategoria.AutoSize = true;
+            this.LblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCategoria.Location = new System.Drawing.Point(53, 123);
+            this.LblCategoria.Name = "LblCategoria";
+            this.LblCategoria.Size = new System.Drawing.Size(72, 15);
+            this.LblCategoria.TabIndex = 3;
+            this.LblCategoria.Text = "Descripción";
             // 
-            // textBox2
+            // TxtCategoria
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 20);
-            this.textBox2.TabIndex = 6;
+            this.TxtCategoria.Location = new System.Drawing.Point(140, 161);
+            this.TxtCategoria.Name = "TxtCategoria";
+            this.TxtCategoria.Size = new System.Drawing.Size(125, 20);
+            this.TxtCategoria.TabIndex = 6;
             // 
             // label2
             // 
@@ -98,9 +99,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(53, 161);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(60, 15);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Nombre";
+            this.label2.Text = "Categoria";
             // 
             // label3
             // 
@@ -108,33 +109,45 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(53, 199);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(78, 15);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Nombre";
+            this.label3.Text = "Fecha Limite";
             // 
-            // dateTimePicker1
+            // dtpFechaLimite
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(120, 199);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(125, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dtpFechaLimite.Location = new System.Drawing.Point(140, 199);
+            this.dtpFechaLimite.Name = "dtpFechaLimite";
+            this.dtpFechaLimite.Size = new System.Drawing.Size(125, 20);
+            this.dtpFechaLimite.TabIndex = 9;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(115, 247);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.button1_Click);
             // 
             // Agregar_tarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(314, 349);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.dtpFechaLimite);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtCategoria);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtNombreTarea);
+            this.Controls.Add(this.TxtDesc);
+            this.Controls.Add(this.LblCategoria);
+            this.Controls.Add(this.TxtTarea);
             this.Controls.Add(this.LblNombreTarea);
             this.Controls.Add(this.LblTitlteTarea);
             this.Name = "Agregar_tarea";
             this.Text = "Agregar Tarea";
+            this.Load += new System.EventHandler(this.Agregar_tarea_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,12 +157,13 @@
 
         private System.Windows.Forms.Label LblTitlteTarea;
         private System.Windows.Forms.Label LblNombreTarea;
-        private System.Windows.Forms.TextBox TxtNombreTarea;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtTarea;
+        private System.Windows.Forms.TextBox TxtDesc;
+        private System.Windows.Forms.Label LblCategoria;
+        private System.Windows.Forms.TextBox TxtCategoria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaLimite;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

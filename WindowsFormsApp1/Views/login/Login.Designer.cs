@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Sesion
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -34,12 +34,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.BtnIngresar = new System.Windows.Forms.Button();
             this.lblErrorIngreso = new System.Windows.Forms.Label();
+            this.BtnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblUsuario
             // 
             this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Location = new System.Drawing.Point(55, 42);
+            this.LblUsuario.Location = new System.Drawing.Point(67, 41);
             this.LblUsuario.Name = "LblUsuario";
             this.LblUsuario.Size = new System.Drawing.Size(43, 13);
             this.LblUsuario.TabIndex = 0;
@@ -49,7 +50,7 @@
             // lblContrasena
             // 
             this.lblContrasena.AutoSize = true;
-            this.lblContrasena.Location = new System.Drawing.Point(55, 93);
+            this.lblContrasena.Location = new System.Drawing.Point(49, 92);
             this.lblContrasena.Name = "lblContrasena";
             this.lblContrasena.Size = new System.Drawing.Size(61, 13);
             this.lblContrasena.TabIndex = 1;
@@ -57,21 +58,22 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 39);
+            this.textBox1.Location = new System.Drawing.Point(116, 38);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 20);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 90);
+            this.textBox2.Location = new System.Drawing.Point(116, 89);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(159, 20);
             this.textBox2.TabIndex = 3;
             // 
             // BtnIngresar
             // 
-            this.BtnIngresar.Location = new System.Drawing.Point(140, 133);
+            this.BtnIngresar.Location = new System.Drawing.Point(70, 142);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(87, 31);
             this.BtnIngresar.TabIndex = 4;
@@ -83,24 +85,36 @@
             // 
             this.lblErrorIngreso.AutoSize = true;
             this.lblErrorIngreso.ForeColor = System.Drawing.Color.Crimson;
-            this.lblErrorIngreso.Location = new System.Drawing.Point(140, 177);
+            this.lblErrorIngreso.Location = new System.Drawing.Point(134, 176);
             this.lblErrorIngreso.Name = "lblErrorIngreso";
             this.lblErrorIngreso.Size = new System.Drawing.Size(0, 13);
             this.lblErrorIngreso.TabIndex = 5;
             // 
-            // Sesion
+            // BtnRegister
+            // 
+            this.BtnRegister.Location = new System.Drawing.Point(178, 142);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(88, 31);
+            this.BtnRegister.TabIndex = 6;
+            this.BtnRegister.Text = "Registrarse";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 210);
+            this.ClientSize = new System.Drawing.Size(431, 227);
+            this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.lblErrorIngreso);
             this.Controls.Add(this.BtnIngresar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.LblUsuario);
-            this.Name = "Sesion";
+            this.Name = "Login";
             this.Text = "Sesion";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +128,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.Label lblErrorIngreso;
+        private System.Windows.Forms.Button BtnRegister;
     }
 }
 
