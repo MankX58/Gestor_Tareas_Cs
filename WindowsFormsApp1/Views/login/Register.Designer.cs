@@ -126,7 +126,7 @@
             this.Controls.Add(this.LblPwd);
             this.Controls.Add(this.LblUsuario);
             this.Name = "Register";
-            this.Text = "Form1";
+            this.Text = "G";
             this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
