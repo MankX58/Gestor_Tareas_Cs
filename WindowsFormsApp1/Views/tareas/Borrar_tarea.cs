@@ -30,7 +30,9 @@ namespace WindowsFormsApp1.Views.tareas
 
         private void Borrar_tarea_Load(object sender, EventArgs e)
         {
-
+            dgvTareas.AutoGenerateColumns = true;
+            dgvTareas.DataSource = null;
+            dgvTareas.DataSource = TareaStore.ListaTareas;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -65,8 +67,8 @@ namespace WindowsFormsApp1.Views.tareas
 
         private void ActualizarTabla()
         {
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = TareaStore.ListaTareas;
+            dgvTareas.DataSource = null;
+            dgvTareas.DataSource = TareaStore.ListaTareas;
         }
         private void txtIDtarea_TextChanged(object sender, EventArgs e)
         {
@@ -74,6 +76,11 @@ namespace WindowsFormsApp1.Views.tareas
         }
 
         private void LblTitlteBorrarTarea_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

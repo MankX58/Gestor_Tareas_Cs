@@ -74,6 +74,12 @@
       <DependentUpon>Agregar_tarea.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\TareaStore.cs" />
+    <Compile Include="Views\tareas\Borrar_tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\tareas\Borrar_tarea.Designer.cs">
+      <DependentUpon>Borrar_tarea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\tareas\Ver_tareas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\tareas\Agregar_tarea.resx">
       <DependentUpon>Agregar_tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\tareas\Borrar_tarea.resx">
+      <DependentUpon>Borrar_tarea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\tareas\Ver_tareas.resx">
       <DependentUpon>Ver_tareas.cs</DependentUpon>

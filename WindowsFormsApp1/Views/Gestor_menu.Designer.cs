@@ -72,6 +72,7 @@
             this.btnBorrarTarea.TabIndex = 3;
             this.btnBorrarTarea.Text = "BORRAR TAREA";
             this.btnBorrarTarea.UseVisualStyleBackColor = true;
+            this.btnBorrarTarea.Click += new System.EventHandler(this.btnBorrarTarea_Click);
             // 
             // btnVerTareas
             // 
@@ -83,7 +84,7 @@
             this.btnVerTareas.UseVisualStyleBackColor = true;
             this.btnVerTareas.Click += new System.EventHandler(this.btnVerTareas_Click);
             // 
-            // Menu
+            // Gestor_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,7 +94,7 @@
             this.Controls.Add(this.btnEditarTarea);
             this.Controls.Add(this.btnAgregarTarea);
             this.Controls.Add(this.LblTitulo);
-            this.Name = "Menu";
+            this.Name = "Gestor_menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);

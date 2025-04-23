@@ -36,5 +36,11 @@ namespace WindowsFormsApp1.Views
         {
 
         }
+
+        private void btnBorrarTarea_Click(object sender, EventArgs e)
+        {
+            Views.tareas.Borrar_tarea borrar_Tarea = new Views.tareas.Borrar_tarea(); 
+            borrar_Tarea.Show();
+        }
     }
 }

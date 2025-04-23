@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvTareas = new System.Windows.Forms.DataGridView();
-            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tareaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tituloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoriaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaLimiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvTareas
@@ -57,14 +57,6 @@
             this.dgvTareas.Name = "dgvTareas";
             this.dgvTareas.Size = new System.Drawing.Size(599, 179);
             this.dgvTareas.TabIndex = 0;
-            // 
-            // tareaBindingSource
-            // 
-            this.tareaBindingSource.DataSource = typeof(WindowsFormsApp1.Models.Tarea);
-            // 
-            // tareaBindingSource1
-            // 
-            this.tareaBindingSource1.DataSource = typeof(WindowsFormsApp1.Models.Tarea);
             // 
             // Id
             // 
@@ -96,6 +88,14 @@
             this.fechaLimiteDataGridViewTextBoxColumn.HeaderText = "FechaLimite";
             this.fechaLimiteDataGridViewTextBoxColumn.Name = "fechaLimiteDataGridViewTextBoxColumn";
             // 
+            // tareaBindingSource1
+            // 
+            this.tareaBindingSource1.DataSource = typeof(WindowsFormsApp1.Models.Tarea);
+            // 
+            // tareaBindingSource
+            // 
+            this.tareaBindingSource.DataSource = typeof(WindowsFormsApp1.Models.Tarea);
+            // 
             // Ver_tareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,8 +106,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Ver_tareas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
